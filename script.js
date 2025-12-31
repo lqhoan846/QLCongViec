@@ -382,7 +382,6 @@ document.querySelectorAll(".close-modal").forEach(btn => {
 ========================================================= */
 
 window.onload = () => {
-  document.getElementById("app-loading").remove();
 
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
@@ -395,3 +394,4 @@ window.onload = () => {
     initDashboard(id);
   }
 };
+
